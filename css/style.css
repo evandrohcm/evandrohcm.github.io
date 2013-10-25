@@ -286,7 +286,7 @@ Menu Styles
 #menu > li#logo > a{
 	position: relative;
 	top: 3px;
-	color: #000;
+	color: rgba(0,0,0,0.5);
 	font-size: 2em;
 	padding: 0;
 	-webkit-transition: text-shadow 0.3s ease;
