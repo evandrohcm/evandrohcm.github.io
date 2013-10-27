@@ -160,6 +160,7 @@ About Styles
 }
 
 #about-img > img {
+	/*width: inherit;*/
 	border-radius: 50%;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
@@ -207,12 +208,15 @@ Contact Styles
 }
 
 #contact  div.wrap {
-	text-align: left;
+	position: relative;
+}
+
+#first-line-logo {
+	width: 100%;
 }
 
 #first-line-logo img {
-	padding: 0;
-	margin: 0;
+	width: 30%;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
 	-ms-transition: all 300ms ease-in-out;
@@ -245,22 +249,21 @@ img#github-image:hover {
 }
 
 #second-line-logo {
-	padding-left: 47px;
-	position: relative;
-	/*background-color: green;*/
+	width: 100%;
+	position: absolute;
 }
 
 #second-line-logo h3 {
-	position: absolute;
-	top: 1.7em;
-	margin-left: 8px;
-	/*background-color: red;*/
-	display: inline-block;
-	/*position: absolute;*/
+	top: 10px;
+	left: 10px;
+	display: inline;
+	position: relative;
 }
 
 #second-line-logo img {
-	display: inline-block;
+	width: 20%;
+	top: 0.3em;
+	left: 0.3em;
 	vertical-align: middle;
 }
 
