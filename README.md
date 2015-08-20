@@ -1,2 +1,0 @@
-Deal with it, bitches
-====================
