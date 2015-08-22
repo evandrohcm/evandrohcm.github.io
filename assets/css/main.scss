@@ -153,9 +153,59 @@ embed {
 
 }
 
+
+/* --- Mobile --- */
+
+@media only screen and (max-width:599px){
+
+  #main-header {
+    position: static;
+    width: 100%;
+  }
+
+  .presentation-title {
+    margin-left: 1.3em; 
+  }
+
+  .presentation-description {
+    display: none;
+  }
+
+  /* It will maybe change with the new logo */
+  .presentation-name {
+    text-transform: none;
+  }
+
+  .nav-list {
+    display: inline-block;
+    text-transform: none;
+    width: 100%;
+  }
+
+  .nav-list-item {
+    margin-bottom: 0.2em;
+    text-align: left;
+    
+    width: 100%;
+
+    a {
+      margin-left: 0.7em;
+      text-decoration: none;
+      color: inherit;
+
+      -webkit-transition: text-shadow 0.1s linear;
+      -o-transition: text-shadow 0.1s linear;
+      transition: text-shadow 0.1s linear;
+    }
+
+  }
+
+}
+
+
 /* --- Tablet --- */
 
-@media only screen and (min-width:600px) and (max-width:900px) {
+@media only screen and (min-width:600px) and (max-width:899px) {
 
   #main-header {
     position: static;
