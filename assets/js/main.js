@@ -6,11 +6,16 @@ $(function(){
 
   navButton.on('click', toggleMenu);
 
-  function toggleMenu() {
+  function toggleMenu () {
     if (nav.is(":visible"))
-        nav.slideUp({complete:function(){$(this).css('display','')}});
+        nav.slideUp({
+          duration: 200,
+          complete: function () {
+            $(this).css('display','')
+          }
+        });
     else
-        nav.slideDown();
+        nav.slideDown(200);
   };
 
 });
