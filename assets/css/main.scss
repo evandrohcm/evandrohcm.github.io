@@ -168,8 +168,12 @@ embed {
 
 @media only screen and (max-width:599px){
 
+  #main-nav {
+    display: none;
+  }
+
   #main-header {
-    position: static;
+    position: fixed;
     width: 100%;
   }
 
@@ -185,7 +189,7 @@ embed {
       display: none;
     }
 
-    /* It will maybe change with the new logo */  
+    /* It will maybe change with the new logo */
     .presentation-name {
       text-transform: none;
       margin: 0;
