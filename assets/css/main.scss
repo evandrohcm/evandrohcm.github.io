@@ -116,7 +116,7 @@ embed {
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
+  width: 25%;
   text-align: center;
 }
 
@@ -124,10 +124,8 @@ embed {
   list-style: none;
   display: inline-block;
   padding: 0;
-  margin-bottom: -3px;
-
-  -webkit-box-shadow: 0px 0px 5px #D9D9D9;
-  box-shadow: 0px 0px 5px #D9D9D9;
+  margin: 0 0 -3px 0;
+  width: 71.875%; // 230px : 320px = 71.875%
 
   li {
     float: left;
@@ -257,6 +255,15 @@ embed {
     margin-right: 0.7em;
   }
 
+  #social-nav {
+    width: 100%;
+    position: static;
+  }
+
+  .social-list {
+    width: 50%;
+  }
+
 }
 
 
@@ -332,11 +339,12 @@ embed {
   }
 
   #social-nav {
-    position: fixed;
+    width: 100%;
+    position: static;
   }
 
   .social-list {
-    width: 32%;
+    width: 50%;
   }
 
 }
@@ -450,50 +458,9 @@ embed {
     }
   }
 
-  #social-nav {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-
   .social-list {
-    list-style: none;
-    display: inline-block;
-    padding: 0;
-    margin-bottom: -3px;
-    width: 71.875%; // 230px : 320px = 71.875%
-
     -webkit-box-shadow: 0px 0px 5px #D9D9D9;
     box-shadow: 0px 0px 5px #D9D9D9;
-
-    li {
-      float: left;
-      width: 20%;
-    }
-
-    a {
-      float: left;
-      width: 100%;
-      height: 46px;
-      line-height: 46px;
-      background: #FFF;
-      color: $color-lighter;
-      text-decoration: none;
-      font-size: 2em;
-
-      -webkit-transition: color 0.5s;
-      -o-transition: color 0.5s;
-      transition: color 0.5s;
-    }
-
-    .social-twitter:hover { color: $twitter-color }
-    .social-facebook:hover { color: $facebook-color }
-    .social-github:hover { color: $github-color }
-    .social-linkedin:hover { color: $linkedin-color }
-    .social-mail:hover { color: $mail-color }
-
   }
 
 }
