@@ -190,7 +190,6 @@ embed {
   }
 
   .nav-list-item {
-    margin-bottom: 1em;
     text-align: left;
     width: 100%;
 
@@ -199,9 +198,10 @@ embed {
     }
 
     a {
-      margin-left: 0.7em;
+      display: block;
       text-decoration: none;
       color: inherit;
+      padding: 0.5em 0 0.5em 0.7em;
 
       -webkit-transition: text-shadow 0.1s linear;
       -o-transition: text-shadow 0.1s linear;
