@@ -153,6 +153,12 @@ embed {
 
 }
 
+.nav-arrow {
+  display: none;
+  position: relative;
+  bottom: -1px;
+}
+
 
 /* --- Mobile --- */
 
@@ -164,16 +170,17 @@ embed {
   }
 
   .presentation-title {
-    margin-left: 1.3em; 
-  }
+    padding: 1em 0 1em 1.3em;
 
-  .presentation-description {
-    display: none;
-  }
+    .presentation-description {
+      display: none;
+    }
 
-  /* It will maybe change with the new logo */
-  .presentation-name {
-    text-transform: none;
+    /* It will maybe change with the new logo */  
+    .presentation-name {
+      text-transform: none;
+      margin: 0;
+    }
   }
 
   .nav-list {
@@ -183,10 +190,13 @@ embed {
   }
 
   .nav-list-item {
-    margin-bottom: 0.2em;
+    margin-bottom: 1em;
     text-align: left;
-    
     width: 100%;
+
+    &:last-child {
+      margin-bottom: 0.5em;
+    }
 
     a {
       margin-left: 0.7em;
@@ -198,6 +208,12 @@ embed {
       transition: text-shadow 0.1s linear;
     }
 
+  }
+
+  .nav-arrow {
+    display: inline;
+    float: right;
+    margin-right: 0.7em;
   }
 
 }
