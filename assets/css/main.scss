@@ -97,6 +97,10 @@ embed {
   }
 }
 
+#nav-button {
+  display: none;
+}
+
 .nav-list {
   list-style: none;
   padding-left: 0;
@@ -169,7 +173,12 @@ embed {
     width: 100%;
   }
 
+  .presentation {
+    position: relative;
+  }
+
   .presentation-title {
+    display: inline-block;
     padding: 1em 0 1em 1.3em;
 
     .presentation-description {
@@ -181,6 +190,34 @@ embed {
       text-transform: none;
       margin: 0;
     }
+  }
+
+  #nav-button {
+    display: inline;
+    position: absolute;
+    right: 0.7em;
+    font-size: 2em;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    z-index: 1000;
+
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  #nav-button .nav-button-stripe {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 4px 0;
+    background-color: $color-median;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
   }
 
   .nav-list {
