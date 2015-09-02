@@ -36,7 +36,61 @@ $mail-color    : #E93E39;
 
 /* --- Keyframes --- */
 
+@-webkit-keyframes slideTop {
+  from  { margin-top: -800px; }
+  90%   { margin-top: 10px; }
+  to    { margin-top: 0; }
+}
+@-moz-keyframes slideTop {
+  from  { margin-top: -800px; }
+  90%   { margin-top: 10px; }
+  to    { margin-top: 0; }
+}
+@-o-keyframes slideTop {
+  from  { margin-top: -800px; }
+  90%   { margin-top: 10px; }
+  to    { margin-top: 0; }
+}@keyframes slideTop {
+  from  { margin-top: -800px; }
+  90%   { margin-top: 10px; }
+  to    { margin-top: 0; }
+}
 
+@-webkit-keyframes slideLeft {
+  from  { margin-left: -800px; }
+  90%   { margin-left: 10px; }
+  to    { margin-left: 0; }
+}
+@-moz-keyframes slideLeft {
+  from  { margin-left: -800px; }
+  90%   { margin-left: 10px; }
+  to    { margin-left: 0; }
+}
+@-o-keyframes slideLeft {
+  from  { margin-left: -800px; }
+  90%   { margin-left: 10px; }
+  to    { margin-left: 0; }
+}@keyframes slideLeft {
+  from  { margin-left: -800px; }
+  90%   { margin-left: 10px; }
+  to    { margin-left: 0; }
+}
+
+@-webkit-keyframes slideBottom {
+  from  { margin-bottom: -500px; }
+  to    { margin-bottom: 0; }
+}
+@-moz-keyframes slideBottom {
+  from  { margin-bottom: -500px; }
+  to    { margin-bottom: 0; }
+}
+@-o-keyframes slideBottom {
+  from  { margin-bottom: -500px; }
+  to    { margin-bottom: 0; }
+}@keyframes slideBottom {
+  from  { margin-bottom: -500px; }
+  to    { margin-bottom: 0; }
+}
 
 /* --- General --- */
 
@@ -389,6 +443,10 @@ embed {
     text-align: center;
     width: 71.875%; // 230px : 320px = 71.875%
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-animation: slideTop 0.8s ease-in-out;
+    -moz-animation: slideTop 0.8s ease-in-out;
+    -o-animation: slideTop 0.8s ease-in-out;
+    animation: slideTop 0.8s ease-in-out;
   }
 
   .presentation-title {
@@ -419,6 +477,10 @@ embed {
 
   #main-nav {
     margin-top: 40px;
+    -webkit-animation: slideLeft 0.8s ease-in-out;
+    -moz-animation: slideLeft 0.8s ease-in-out;
+    -o-animation: slideLeft 0.8s ease-in-out;
+    animation: slideLeft 0.8s ease-in-out;
   }
 
   .nav-list {
@@ -482,6 +544,10 @@ embed {
     bottom: 0;
     left: 0;
     right: 0;
+    -webkit-animation: slideBottom 1s ease-in-out;
+    -moz-animation: slideBottom 1s ease-in-out;
+    -o-animation: slideBottom 1s ease-in-out;
+    animation: slideBottom 1s ease-in-out;
   }
 
   .social-list {
