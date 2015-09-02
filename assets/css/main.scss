@@ -52,6 +52,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
 img,
 picture,
 video,
