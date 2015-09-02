@@ -92,6 +92,46 @@ $mail-color    : #E93E39;
   to    { margin-bottom: 0; }
 }
 
+@-webkit-keyframes slideLeftMobile {
+  from  { margin-left: -500px; }
+  90%   { margin-left: 5px; }
+  to    { margin-left: 0; }
+}
+@-moz-keyframes slideLeftMobile {
+  from  { margin-left: -500px; }
+  90%   { margin-left: 5px; }
+  to    { margin-left: 0; }
+}
+@-o-keyframes slideLeftMobile {
+  from  { margin-left: -500px; }
+  90%   { margin-left: 5px; }
+  to    { margin-left: 0; }
+}@keyframes slideLeftMobile {
+  from  { margin-left: -500px; }
+  90%   { margin-left: 5px; }
+  to    { margin-left: 0; }
+}
+
+@-webkit-keyframes slideTopMobile {
+  from  { margin-top: -500px; }
+  90%   { margin-top: 5px; }
+  to    { margin-top: 0; }
+}
+@-moz-keyframes slideTopMobile {
+  from  { margin-top: -500px; }
+  90%   { margin-top: 5px; }
+  to    { margin-top: 0; }
+}
+@-o-keyframes slideTopMobile {
+  from  { margin-top: -500px; }
+  90%   { margin-top: 5px; }
+  to    { margin-top: 0; }
+}@keyframes slideTopMobile {
+  from  { margin-top: -500px; }
+  90%   { margin-top: 5px; }
+  to    { margin-top: 0; }
+}
+
 /* --- General --- */
 
 *, *:before, *:after {
@@ -250,6 +290,10 @@ embed {
   }
 
   .presentation-title {
+    -webkit-animation: slideLeftMobile 1s ease-in-out;
+    -moz-animation: slideLeftMobile 1s ease-in-out;
+    -o-animation: slideLeftMobile 1s ease-in-out;
+    animation: slideLeftMobile 1s ease-in-out;
     display: inline-block;
     padding: 1em 0 1em 1.3em;
 
@@ -279,6 +323,11 @@ embed {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+
+    -webkit-animation: slideTopMobile 1s ease-in-out;
+    -moz-animation: slideTopMobile 1s ease-in-out;
+    -o-animation: slideTopMobile 1s ease-in-out;
+    animation: slideTopMobile 1s ease-in-out;
   }
 
   #nav-button .nav-button-stripe {
@@ -443,10 +492,10 @@ embed {
     text-align: center;
     width: 71.875%; // 230px : 320px = 71.875%
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    -webkit-animation: slideTop 0.8s ease-in-out;
-    -moz-animation: slideTop 0.8s ease-in-out;
-    -o-animation: slideTop 0.8s ease-in-out;
-    animation: slideTop 0.8s ease-in-out;
+    -webkit-animation: slideTop 1s ease-in-out;
+    -moz-animation: slideTop 1s ease-in-out;
+    -o-animation: slideTop 1s ease-in-out;
+    animation: slideTop 1s ease-in-out;
   }
 
   .presentation-title {
@@ -477,10 +526,10 @@ embed {
 
   #main-nav {
     margin-top: 40px;
-    -webkit-animation: slideLeft 0.8s ease-in-out;
-    -moz-animation: slideLeft 0.8s ease-in-out;
-    -o-animation: slideLeft 0.8s ease-in-out;
-    animation: slideLeft 0.8s ease-in-out;
+    -webkit-animation: slideLeft 1s ease-in-out;
+    -moz-animation: slideLeft 1s ease-in-out;
+    -o-animation: slideLeft 1s ease-in-out;
+    animation: slideLeft 1s ease-in-out;
   }
 
   .nav-list {
@@ -544,10 +593,10 @@ embed {
     bottom: 0;
     left: 0;
     right: 0;
-    -webkit-animation: slideBottom 1s ease-in-out;
-    -moz-animation: slideBottom 1s ease-in-out;
-    -o-animation: slideBottom 1s ease-in-out;
-    animation: slideBottom 1s ease-in-out;
+    -webkit-animation: slideBottom 1.3s ease-in-out;
+    -moz-animation: slideBottom 1.3s ease-in-out;
+    -o-animation: slideBottom 1.3s ease-in-out;
+    animation: slideBottom 1.3s ease-in-out;
   }
 
   .social-list {
