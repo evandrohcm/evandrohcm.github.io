@@ -112,11 +112,7 @@ embed {
   font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
 }
 
-#social-nav {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 25%;
+.social-nav {
   text-align: center;
 }
 
@@ -147,12 +143,10 @@ embed {
     transition: color 0.5s;
   }
 
-  .social-twitter:hover { color: $twitter-color }
-  .social-facebook:hover { color: $facebook-color }
-  .social-github:hover { color: $github-color }
-  .social-linkedin:hover { color: $linkedin-color }
-  .social-mail:hover { color: $mail-color }
+}
 
+.responsive-social-nav {
+  display: none;
 }
 
 .nav-arrow {
@@ -168,11 +162,21 @@ embed {
 
   #main-nav {
     display: none;
+    z-index: 1000;
   }
 
   #main-header {
     position: fixed;
     width: 100%;
+  }
+
+  .default-social-nav {
+    display: none;
+  }
+
+  .responsive-social-nav {
+    display: block;
+    position: static;
   }
 
   .presentation {
@@ -255,13 +259,13 @@ embed {
     margin-right: 0.7em;
   }
 
-  #social-nav {
-    width: 100%;
-    position: static;
-  }
-
   .social-list {
     width: 50%;
+  }
+
+  // Makes the nav menu be able to override the Font Awesome
+  .fa {
+    transform: initial;
   }
 
 }
@@ -274,6 +278,14 @@ embed {
   #main-header {
     position: static;
     width: 100%;
+  }
+
+  .default-social-nav {
+    display: none;
+  }
+
+  .responsive-social-nav {
+    display: block;
   }
 
   .presentation {
@@ -336,11 +348,6 @@ embed {
       -o-transition: text-shadow 0.1s linear;
       transition: text-shadow 0.1s linear;
     }
-  }
-
-  #social-nav {
-    width: 100%;
-    position: static;
   }
 
   .social-list {
@@ -458,9 +465,21 @@ embed {
     }
   }
 
+  .social-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
   .social-list {
     -webkit-box-shadow: 0px 0px 5px #D9D9D9;
     box-shadow: 0px 0px 5px #D9D9D9;
+    .social-twitter:hover { color: $twitter-color }
+    .social-facebook:hover { color: $facebook-color }
+    .social-github:hover { color: $github-color }
+    .social-linkedin:hover { color: $linkedin-color }
+    .social-mail:hover { color: $mail-color }
   }
 
 }
