@@ -179,6 +179,11 @@ embed {
   *zoom: 1;
 }
 
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
 #main-header {
   background-color: $header-color;
   -webkit-box-shadow: 1px 1px 5px #E6E6E6;
@@ -475,6 +480,15 @@ embed {
 /* --- Standard Desktop --- */
 
 @media only screen and (min-width:900px) {
+
+  /* Content */
+
+  .container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+  }
 
   /* Header */
 
