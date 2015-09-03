@@ -9,11 +9,16 @@
 
   <div class="container">
     <div class="content-wrapper">
-    {{ content }}
-    </div>
-  </div>
 
-  {% include footer.html %}
+      {{ content }}
+      <!-- Push the sticky footer -->
+      <div class="push"></div>
+
+    </div> <!-- end .content-wrapper -->
+
+    {% include footer.html %}
+
+  </div> <!-- end .container -->
   
   {% include scripts.html %}
 

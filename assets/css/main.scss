@@ -132,6 +132,27 @@ $mail-color    : #E93E39;
   to    { margin-top: 0; }
 }
 
+@-webkit-keyframes fadeInFooter {
+  from  { opacity: 0; }
+  50%   { opacity: 0; }
+  to    { opacity: 1; }
+}
+@-moz-keyframes fadeInFooter {
+  from  { opacity: 0; }
+  50%   { opacity: 0; }
+  to    { opacity: 1; }
+}
+@-o-keyframes fadeInFooter {
+  from  { opacity: 0; }
+  50%   { opacity: 0; }
+  to    { opacity: 1; }
+}@keyframes fadeInFooter {
+  from  { opacity: 0; }
+  50%   { opacity: 0; }
+  to    { opacity: 1; }
+}
+
+
 /* --- General --- */
 
 *, *:before, *:after {
@@ -179,10 +200,56 @@ embed {
   *zoom: 1;
 }
 
-.content-wrapper {
-  width: 80%;
-  margin: 0 auto;
+
+/* --- Container, content wrapper and sticky footer --- */
+
+html,
+body {
+  height: 100%;
 }
+
+.container {
+  height: 100%;
+}
+
+.content-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto -60px;
+  font-size: 2em;
+}
+
+.push,
+.footer {
+  height: 60px;
+}
+
+.footer {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  color: $color-darker;
+  -webkit-animation: fadeInFooter 2.1s ease-in-out;
+  -moz-animation: fadeInFooter 2.1s ease-in-out;
+  -o-animation: fadeInFooter 2.1s ease-in-out;
+  animation: fadeInFooter 2.1s ease-in-out;
+
+  .footer-text {
+    font-size: 1.6em;
+    margin: 0;
+    position: relative;
+
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+
+/* --- Header and Navs --- */
 
 #main-header {
   background-color: $header-color;
@@ -267,9 +334,26 @@ embed {
 }
 
 
+/* --- Media queries for responsive layout --- */
+
 /* --- Mobile --- */
 
 @media only screen and (max-width:599px){
+
+  .content-wrapper {
+    margin-bottom: -106px;
+  }
+
+  .push {
+    height: 106px;
+  }
+
+  .footer {
+    -webkit-animation: fadeInFooter 1.7s ease-in-out;
+    -moz-animation: fadeInFooter 1.7s ease-in-out;
+    -o-animation: fadeInFooter 1.7s ease-in-out;
+    animation: fadeInFooter 1.7s ease-in-out;
+  }
 
   #main-nav {
     display: none;
@@ -394,6 +478,10 @@ embed {
 /* --- Tablet --- */
 
 @media only screen and (min-width:600px) and (max-width:899px) {
+
+  .container {
+    height: auto;
+  }
 
   #main-header {
     position: static;
