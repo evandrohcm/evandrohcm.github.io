@@ -200,6 +200,10 @@ embed {
   *zoom: 1;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 
 /* --- Container, content wrapper and sticky footer --- */
 
@@ -217,13 +221,13 @@ body {
   height: auto !important;
   width: 80%;
   height: 100%;
-  margin: 0 auto -60px;
+  margin: 0 auto -46px;
   font-size: 2em;
 }
 
 .push,
 .footer {
-  height: 60px;
+  height: 46px;
 }
 
 .footer {
