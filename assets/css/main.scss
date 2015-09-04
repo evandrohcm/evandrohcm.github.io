@@ -204,6 +204,15 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+.text-shadow {
+  color: black !important;
+  -webkit-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+  -ms-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+  -o-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+}
+
 
 /* --- Container, content wrapper and sticky footer --- */
 
@@ -219,10 +228,25 @@ body {
 .content-wrapper {
   min-height: 100%;
   height: auto !important;
-  width: 80%;
+  // (?), I did't understand as well
   height: 100%;
+  width: 80%;
   margin: 0 auto -46px;
+  padding: 3.5em 0 2em 0;
   font-size: 2em;
+  line-height: 1.6em;
+  color: $color-darker;
+
+  // It may change when the .post class be created
+  img {
+    border: 3px solid lightgray;
+  }
+
+  a {
+    @extend .text-shadow;
+    border-bottom: 1px solid #BFBFBF;
+  }
+
 }
 
 .push,
@@ -234,22 +258,22 @@ body {
   position: relative;
   margin: 0 auto;
   text-align: center;
-  color: $color-darker;
   -webkit-animation: fadeInFooter 2.1s ease-in-out;
   -moz-animation: fadeInFooter 2.1s ease-in-out;
   -o-animation: fadeInFooter 2.1s ease-in-out;
   animation: fadeInFooter 2.1s ease-in-out;
 
   .footer-text {
+    color: $color-median;
     font-size: 1.6em;
     margin: 0;
     position: relative;
-
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
 }
 
 
@@ -345,11 +369,11 @@ body {
 @media only screen and (max-width:599px){
 
   .content-wrapper {
-    margin-bottom: -106px;
+    margin-bottom: -91px;
   }
 
   .push {
-    height: 106px;
+    height: 91px;
   }
 
   .footer {
@@ -656,7 +680,6 @@ body {
       position: relative;
       text-decoration: none;
       color: inherit;
-
       -webkit-transition: text-shadow 0.1s linear;
       -o-transition: text-shadow 0.1s linear;
       transition: text-shadow 0.1s linear;
@@ -664,13 +687,11 @@ body {
 
     a:hover {
       color: $color-darker;
-
       -webkit-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
       -moz-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
       -ms-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
       -o-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
       text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
-
       -webkit-transition: text-shadow 0.1s linear;
       -o-transition: text-shadow 0.1s linear;
       transition: text-shadow 0.1s linear;
@@ -683,7 +704,6 @@ body {
       height: 2px;
       width: 0;
       background-color: $color-darker;
-
       -webkit-transition: width 0.1s linear;
       -o-transition: width 0.1s linear;
       transition: width 0.1s linear;
