@@ -4,5 +4,6 @@ role: Web Developer
 email: evandro.hcm@gmail.com
 baseurl: /
 url: http://evandromacedo.com
+paginate: 5
 sass:
   style: :compressed
