@@ -5,5 +5,6 @@ email: evandro.hcm@gmail.com
 baseurl: /
 url: http://evandromacedo.com
 paginate: 5
+excerpt_separator: "<!-- more -->"
 sass:
   style: :compressed
