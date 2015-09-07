@@ -353,16 +353,21 @@ body {
 
 /* --- Posts --- */
 
-.post-list {
-  // margin: 0;
-}
-
 .post-item {
   border-bottom: 1px solid #D3D3D3;
   -webkit-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.3);
   padding-bottom: 1.5em;
+  margin-bottom: 2em;
+
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: initial;
+    -webkit-box-shadow: initial;
+    -moz-box-shadow: initial;
+    box-shadow: initial;
+  }
 }
 
 .post-header {
@@ -424,7 +429,7 @@ body {
   }
 
   .push {
-    height: 93px;
+    height: 50px;
   }
 
   .footer {

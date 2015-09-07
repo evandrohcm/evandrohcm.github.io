@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Isso é um título exemplo de um post"
+title: "Isso é um título exemplo de um post Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, officiis!"
 published: true
 ---
 
 <!-- Seriously? -->
 
-![Este é pairar-texto (texto alternativo) para minha imagem](http://www.mamuteinsano.com.br/wp-content/uploads/2014/07/hottest-home-workspace-design.jpg "Um título opcional")
+<!-- ![Este é pairar-texto (texto alternativo) para minha imagem](http://www.mamuteinsano.com.br/wp-content/uploads/2014/07/hottest-home-workspace-design.jpg "Um título opcional") -->
 
 What the hell :D [Click aqui!](http://test.com/) [Click aqui!](http://test.com/)Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, quia, maiores! Ipsum quis, voluptatibus! Corporis, maxime iste. Odit dolorum veniam alias numquam placeat sapiente reiciendis perspiciatis nemo, obcaecati, id assumenda?
 
