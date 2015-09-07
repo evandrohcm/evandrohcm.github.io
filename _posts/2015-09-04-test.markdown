@@ -1,0 +1,15 @@
+---
+layout: default
+title: "Isso é um título exemplo de um post Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, officiis!"
+published: true
+---
+
+<!-- Seriously? -->
+
+![Este é pairar-texto (texto alternativo) para minha imagem](http://www.mamuteinsano.com.br/wp-content/uploads/2014/07/hottest-home-workspace-design.jpg "Um título opcional")
+
+What the hell :D [Click aqui!](http://test.com/) [Click aqui!](http://test.com/)Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, quia, maiores! Ipsum quis, voluptatibus! Corporis, maxime iste. Odit dolorum veniam alias numquam placeat sapiente reiciendis perspiciatis nemo, obcaecati, id assumenda?
+
+<!-- more -->
+
+Lorem <a href="/">ipsum</a> dolor sit amet, consectetur adipisicing elit. Placeat, veritatis nulla ducimus modi eius rerum at aspernatur. Maxime, quia neque quo, doloribus impedit doloremque quod assumenda harum ipsum repellendus tempore.

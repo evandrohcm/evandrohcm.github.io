@@ -228,25 +228,14 @@ body {
 .content-wrapper {
   min-height: 100%;
   height: auto !important;
-  // (?), I did't understand as well
+  /* (?), I didn't understand as well */
   height: 100%;
   width: 80%;
   margin: 0 auto -46px;
   padding: 3.5em 0 2em 0;
-  font-size: 2em;
+  font-size: 1.9em;
   line-height: 1.6em;
   color: $color-darker;
-
-  // It may change when the .post class be created
-  img {
-    border: 3px solid lightgray;
-  }
-
-  a {
-    @extend .text-shadow;
-    border-bottom: 1px solid #BFBFBF;
-  }
-
 }
 
 .push,
@@ -362,6 +351,68 @@ body {
 }
 
 
+/* --- Posts --- */
+
+.post-list {
+  // margin: 0;
+}
+
+.post-item {
+  border-bottom: 1px solid #D3D3D3;
+  -webkit-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.3);
+  padding-bottom: 1.5em;
+}
+
+.post-header {
+  margin-bottom: 1.5em;
+  text-align: center;
+
+  .post-title {
+    -webkit-transition: color 0.5s, text-shadow 0.5s;
+    -o-transition: all 0.5s text-shadow 0.5s;
+    transition: all 0.5s text-shadow 0.5s;
+    font-weight: normal;
+    line-height: 1.2em;
+  }
+
+  .post-title:hover {
+    @extend .text-shadow;
+    -webkit-transition: color 0.5s, text-shadow 0.5s;
+    -o-transition: all 0.5s text-shadow 0.5s;
+    transition: all 0.5s text-shadow 0.5s;
+  }
+}
+
+.post-content {
+  // It may change when the .post class be created
+  img {
+    border: 3px solid #D3D3D3;
+  }
+
+  p > a {
+    @extend .text-shadow;
+    border-bottom: 1px solid #BFBFBF;
+  }
+}
+
+.post-footer {
+  margin-top: 2em;
+
+  .post-date, .post-link {
+    display: inline-block;
+  }
+
+  .post-link {
+    @extend .text-shadow;
+    float: right;
+    position: relative;
+  }
+
+}
+
+
 /* --- Media queries for responsive layout --- */
 
 /* --- Mobile --- */
@@ -391,6 +442,7 @@ body {
   #main-header {
     position: fixed;
     width: 100%;
+    z-index: 1000;
   }
 
   .default-social-nav {
@@ -696,22 +748,6 @@ body {
       -o-transition: text-shadow 0.1s linear;
       transition: text-shadow 0.1s linear;
     }
-
-    a::before {
-      content: " ";
-      position: absolute;
-      bottom: 0;
-      height: 2px;
-      width: 0;
-      background-color: $color-darker;
-      -webkit-transition: width 0.1s linear;
-      -o-transition: width 0.1s linear;
-      transition: width 0.1s linear;
-    }
-
-    a:hover::before {
-      width: 100%;
-    }
   }
 
   .social-nav {
@@ -733,6 +769,27 @@ body {
     .social-github:hover { color: $github-color }
     .social-linkedin:hover { color: $linkedin-color }
     .social-mail:hover { color: $mail-color }
+  }
+
+  .underline-hover {
+    position: relative;
+
+    a::before {
+      content: " ";
+      position: absolute;
+      bottom: 0;
+      height: 2px;
+      width: 0;
+      background-color: $color-darker;
+      -webkit-transition: width 0.1s linear;
+      -o-transition: width 0.1s linear;
+      transition: width 0.1s linear;
+    }
+
+    a:hover::before {
+      width: 100%;
+    }
+
   }
 
 }
