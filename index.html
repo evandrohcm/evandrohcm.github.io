@@ -1,3 +1,42 @@
 ---
 layout: default
+class: index
 ---
+
+<section class="post-list">
+
+  {% for post in paginator.posts %}
+
+    <article class="post-item">
+
+      <header class="post-header">
+        <h1 class="post-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h1>
+      </header> <!-- end .post-header -->
+      
+      <section class="post-content">
+      {{ post.excerpt }}
+      </section> <!-- end .post-content -->
+
+      <footer class="post-footer">
+        <p class="post-date">{{ post.date | date: "%m/%d/%Y" }}</p>
+
+        <p class="post-link clearfix underline-hover">
+          <a href="{{ post.url }}">Read more...</a>
+        </p>
+      </footer> <!-- end .post-footer -->
+
+    </article> <!-- end .post-item -->
+
+  {% endfor %}
+
+</section> <!-- end .post-list -->
+
+<!-- <h1>Isso é um h1</h1>
+<h2>Isso é um h2</h2>
+
+<img src="http://www.mamuteinsano.com.br/wp-content/uploads/2014/07/hottest-home-workspace-design.jpg" alt="">
+
+<p>Isso é um p. <span>Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Voluptatem</a> ipsam, iste n. Lorem ipsum dolor sit amet, consectetur <a href="">adipisicing</a> elit. Eos fuga eveniet officia nemo, veniam ab obcaecati aliquam quibusdam aliquid at saepe, autem veritatis incidunt aperiam possimus error rem iusto! Quidem ducimus alias <a href="">molestias</a> perspiciatis cum sapiente. Error animi, laudantium non amet veritatis iusto odio saepe quo voluptas nesciunt repellendus esse fugiat itaque dolorum inventore fuga distinctio, deleniti quidem quae! Praesentium quae, assumenda sint aspernatur, beatae perspiciatis. Esse quidem aperiam necessitatibus odit saepe nesciunt. Eveniet voluptatem, consequuntur vel sequi totam labore a recusandae et consequatur vero molestiae perspiciatis odit voluptas explicabo! Soluta debitis, nostrum labore optio, molestias ab ipsa, atque facere est reprehenderit quisquam cumque fugit cum iure repellat ipsum pariatur possimus recusandae dolorem laboriosam perspiciatis. Nihil cupiditate sunt ipsa officiis accusamus nesciunt eveniet accusantium, alias quas architecto. Quo quibusdam similique error explicabo, cupiditate numquam earum iure accusamus quaerat corporis eos facilis eius et, ullam consectetur voluptates adipisci ipsam eligendi aperiam, consequatur cumque autem eaque. Provident deleniti eum aliquid neque veniam culpa blanditiis cupiditate! In fugit distinctio ea, ad optio veritatis reprehenderit esse unde quisquam facere cumque deserunt rem architecto, praesentium nesciunt, assumenda nisi impedit explicabo eveniet vero deleniti delectus tempore totam eos? Labore porro vitae voluptatem error. Animi eum, nam quibusdam tenetur, dolor sint vitae est facere error et ab nihil tempora! Quam eligendi suscipit dolor</p>
+ -->
