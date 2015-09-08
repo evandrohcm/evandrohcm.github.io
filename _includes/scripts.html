@@ -3,3 +3,14 @@
 
 <!-- Main JS -->
 <script src="{{ site.baseurl }}assets/js/main.js"></script>
+
+<script>
+   
+   jQuery(document).ready(function($) {
+     
+  $.get("/", function (data) {
+     console.log(data);
+  }); 
+   });
+
+</script>
