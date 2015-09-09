@@ -364,7 +364,7 @@ body {
   padding-bottom: 1.5em;
   margin-bottom: 2em;
 
-  &:last-child {
+  &:last-of-type {
     margin-bottom: 0;
     border-bottom: initial;
     -webkit-box-shadow: initial;
@@ -418,6 +418,14 @@ body {
     position: relative;
   }
 
+}
+
+.load-more {
+  text-align: center;
+
+  span.underline-hover {
+    display: inline-block;
+  }
 }
 
 
@@ -562,6 +570,10 @@ body {
     width: 50%;
   }
 
+  .load-more {
+    margin-bottom: 1em;
+  }
+
   // Makes the nav menu be able to override the Font Awesome
   .fa {
     transform: initial;
@@ -581,6 +593,10 @@ body {
   #main-header {
     position: static;
     width: 100%;
+  }
+
+  .content-wrapper {
+    padding-top: 2.5em;
   }
 
   .default-social-nav {
@@ -651,6 +667,10 @@ body {
       -o-transition: text-shadow 0.1s linear;
       transition: text-shadow 0.1s linear;
     }
+  }
+
+  .load-more {
+    margin-bottom: -1.2em;
   }
 
   .social-list {

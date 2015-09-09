@@ -3,9 +3,21 @@ layout: default
 class: index
 ---
 
-<section class="post-list">
+{% if paginator.page %}
 
-  {% for post in paginator.posts %}
+  {% assign offset      = paginator.page | minus:1 | times:paginator.per_page %}
+  {% assign currentPage = paginator.page %}
+
+{% else %}
+
+  {% assign offset      = 0 %}
+  {% assign currentPage = 1 %}
+
+{% endif %}
+
+<section class="post-list" data-page="{{ currentPage }}" data-totalPages="{{ paginator.total_pages }}">
+
+  {% for post in site.posts limit:site.paginate offset:offset %}
 
     <article class="post-item">
 
@@ -14,13 +26,13 @@ class: index
           <a href="{{ post.url }}">{{ post.title }}</a>
         </h1>
       </header> <!-- end .post-header -->
-      
+
       <section class="post-content">
       {{ post.excerpt }}
       </section> <!-- end .post-content -->
 
       <footer class="post-footer">
-        <p class="post-date">{{ post.date | date: "%m/%d/%Y" }}</p>
+        <p class="post-date"><i class="fa fa-clock-o"></i> {{ post.date | date: "%m/%d/%Y" }}</p>
 
         <p class="post-link clearfix underline-hover">
           <a href="{{ post.url }}">Read more...</a>
@@ -33,10 +45,15 @@ class: index
 
 </section> <!-- end .post-list -->
 
-<!-- <h1>Isso é um h1</h1>
-<h2>Isso é um h2</h2>
+{% assign postCount    = site.posts | size %}
+{% assign postsCovered = site.paginate | plus:offset %}
 
-<img src="http://www.mamuteinsano.com.br/wp-content/uploads/2014/07/hottest-home-workspace-design.jpg" alt="">
+{% if postsCovered < postCount %}
 
-<p>Isso é um p. <span>Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Voluptatem</a> ipsam, iste n. Lorem ipsum dolor sit amet, consectetur <a href="">adipisicing</a> elit. Eos fuga eveniet officia nemo, veniam ab obcaecati aliquam quibusdam aliquid at saepe, autem veritatis incidunt aperiam possimus error rem iusto! Quidem ducimus alias <a href="">molestias</a> perspiciatis cum sapiente. Error animi, laudantium non amet veritatis iusto odio saepe quo voluptas nesciunt repellendus esse fugiat itaque dolorum inventore fuga distinctio, deleniti quidem quae! Praesentium quae, assumenda sint aspernatur, beatae perspiciatis. Esse quidem aperiam necessitatibus odit saepe nesciunt. Eveniet voluptatem, consequuntur vel sequi totam labore a recusandae et consequatur vero molestiae perspiciatis odit voluptas explicabo! Soluta debitis, nostrum labore optio, molestias ab ipsa, atque facere est reprehenderit quisquam cumque fugit cum iure repellat ipsum pariatur possimus recusandae dolorem laboriosam perspiciatis. Nihil cupiditate sunt ipsa officiis accusamus nesciunt eveniet accusantium, alias quas architecto. Quo quibusdam similique error explicabo, cupiditate numquam earum iure accusamus quaerat corporis eos facilis eius et, ullam consectetur voluptates adipisci ipsam eligendi aperiam, consequatur cumque autem eaque. Provident deleniti eum aliquid neque veniam culpa blanditiis cupiditate! In fugit distinctio ea, ad optio veritatis reprehenderit esse unde quisquam facere cumque deserunt rem architecto, praesentium nesciunt, assumenda nisi impedit explicabo eveniet vero deleniti delectus tempore totam eos? Labore porro vitae voluptatem error. Animi eum, nam quibusdam tenetur, dolor sint vitae est facere error et ab nihil tempora! Quam eligendi suscipit dolor</p>
- -->
+  <p class="load-more">
+    <span class="underline-hover">
+      <a id="load-more-button" href="#" class="text-shadow">Load more posts</a>
+    </span>
+  </p>
+
+{% endif %}
