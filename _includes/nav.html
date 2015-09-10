@@ -22,12 +22,12 @@
 
   </div> <!-- end .presentation -->
 
-  <nav id="main-nav">
+  <nav id="main-nav" data-active="{{ page.active }}">
     <ul class="nav-list">
 
-      <li class="nav-list-item underline-hover"><a href="#">Blog<i class="fa fa-angle-right nav-arrow"></i></a></li>
-      <li class="nav-list-item underline-hover"><a href="#">About<i class="fa fa-angle-right nav-arrow"></i></a></li>
-      <li class="nav-list-item underline-hover"><a href="#">Projects<i class="fa fa-angle-right nav-arrow"></i></a></li>
+      <li class="nav-list-item underline-hover" data-menu="blog"><a href="#">Blog<i class="fa fa-angle-right nav-arrow"></i></a></li>
+      <li class="nav-list-item underline-hover" data-menu="about"><a href="#">About<i class="fa fa-angle-right nav-arrow"></i></a></li>
+      <li class="nav-list-item underline-hover" data-menu="projects"><a href="#">Projects<i class="fa fa-angle-right nav-arrow"></i></a></li>
 
     </ul> <!-- end .nav-list -->
   </nav> <!-- end #main-nav -->

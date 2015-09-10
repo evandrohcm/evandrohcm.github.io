@@ -323,6 +323,28 @@ body {
   display: none;
 }
 
+.active {
+  
+  a {
+    color: $color-darker;
+    -webkit-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    -moz-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    -ms-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    -o-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  a::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100% !important;
+    background-color: $color-darker;
+  }
+
+}
+
 .nav-list {
   list-style: none;
   padding-left: 0;

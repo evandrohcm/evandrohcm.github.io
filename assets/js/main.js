@@ -2,8 +2,8 @@ $(function(){
 
   /* --- Responsive nav menu --- */
 
-  var nav       = $('#main-nav'),
-      navButton = $('#nav-button');
+  var nav       = $("#main-nav"),
+      navButton = $("#nav-button");
 
   navButton.on('click', toggleMenu);
 
@@ -27,7 +27,7 @@ $(function(){
 
   /* --- Load more button --- */
 
-  $("#load-more-button").click(loadMorePosts);
+  $("#load-more-button").on('click', loadMorePosts);
 
   function loadMorePosts (event) {
 
@@ -56,5 +56,19 @@ $(function(){
     });
 
   };
+
+
+  /* --- Active nav item --- */
+
+  var active = $("#main-nav").data("active");
+
+  $("#main-nav .nav-list-item").each(function () {
+
+    $this = $(this);
+
+    if(active == $this.data("menu"))
+      $this.addClass("active");
+
+  });
 
 });
