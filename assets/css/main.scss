@@ -419,7 +419,11 @@ body {
 }
 
 .post-content {
-  // It may change when the .post class be created
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+  }
+
   img {
     border: 3px solid #D3D3D3;
     display: block;
@@ -455,16 +459,16 @@ body {
 .load-more {
   text-align: center;
 
-  span.underline-hover {
-    display: inline-block;
-  }
-
   .loading-spinner {
     margin-top: 5px;
     display: block;
     color: $color-lighter;
   }
 
+}
+
+p span.underline-hover {
+  display: inline-block;
 }
 
 
@@ -503,6 +507,14 @@ body {
 
   .push {
     height: 50px;
+  }
+
+  .content-wrapper {
+    padding-top: 4.3em;
+  }
+
+  .back-posts {
+    margin-bottom: 0.8em;
   }
 
   #main-nav {
