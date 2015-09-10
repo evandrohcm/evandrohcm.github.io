@@ -33,12 +33,12 @@ $(function(){
 
     event.preventDefault();
 
-    var _this          = this,
+    var $loadMore      = $(this).parents(".load-more"),
         $blogContainer = $(".post-list"),
         nextPage       = parseInt($blogContainer.attr("data-page")) + 1,
         totalPages     = parseInt($blogContainer.attr("data-totalPages"));
 
-    $(this).addClass("loading");
+    $loadMore.append('<i class="fa fa-refresh fa-spin loading-spinner"></i>');
 
     $.get("/page" + nextPage, function (data) {
 
@@ -51,7 +51,7 @@ $(function(){
         $(".load-more").remove();
       }
 
-      $(_this).removeClass("loading");
+      $loadMore.remove('.loading-spinner');
 
     });
 

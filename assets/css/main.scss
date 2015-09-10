@@ -426,6 +426,13 @@ body {
   span.underline-hover {
     display: inline-block;
   }
+
+  .loading-spinner {
+    margin-top: 5px;
+    display: block;
+    color: $color-lighter;
+  }
+
 }
 
 
