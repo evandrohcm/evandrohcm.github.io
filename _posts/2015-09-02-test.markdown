@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Isso é um título exemplo de um post"
 published: true
 ---
