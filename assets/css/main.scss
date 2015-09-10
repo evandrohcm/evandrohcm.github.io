@@ -422,12 +422,19 @@ body {
   // It may change when the .post class be created
   img {
     border: 3px solid #D3D3D3;
+    display: block;
+    margin: auto;
   }
 
-  p > a {
-    @extend .text-shadow;
-    border-bottom: 1px solid #BFBFBF;
+  p {
+    margin: 1.2em 0;
+
+    a {
+      @extend .text-shadow;
+      border-bottom: 1px solid #BFBFBF;
+    }
   }
+
 }
 
 .post-footer {
