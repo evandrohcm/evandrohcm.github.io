@@ -8,13 +8,8 @@ published: true
 
 <!-- ![Este é pairar-texto (texto alternativo) para minha imagem](http://www.clickgratis.com.br/fotos-imagens/smile/aHR0cDovL21pY2hlbGxlc3JlYWQuY29tL2ZpbGVzLzIwMTMvMDQvc21pbGUuanBn.jpg "Um título opcional") -->
 
-Há um tempo atrás, eu comprava livros de programação em uma frequência razoável. Daí começava a ler e ia lendo acompanhando o livro, fazendo todos os exercícios e exemplos. E ia nessa até que uma hora eu meio que enchia o saco e parava. Fiz isso por mais vezes que gostaria de admitir :/
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptas, accusantium. Animi omnis, quaerat odio possimus dignissimos cum alias sed, perspiciatis quibusdam exercitationem voluptatibus laborum dolore dolorum modi soluta iusto!
 
 <!-- more -->
 
 Lorem <a href="/">ipsum</a> dolor sit amet, consectetur adipisicing elit. Placeat, veritatis nulla ducimus modi eius rerum at aspernatur. Maxime, quia neque quo, doloribus impedit doloremque quod assumenda harum ipsum repellendus tempore.
-
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure officia error vero quos adipisci? Et at optio possimus voluptate placeat repudiandae sunt voluptates laborum officia, dolor voluptatum amet tenetur nostrum!
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis eveniet incidunt, consequatur iusto nostrum, in aliquam vel corrupti illo at, et expedita possimus sapiente quisquam quibusdam ullam autem, molestiae laborum.
