@@ -226,6 +226,12 @@ embed {
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+  font-weight: normal;
+}
+
+.main-heading {
+  margin-bottom: 0.75em;
+  text-align: center;
 }
 
 .text-shadow {
@@ -308,6 +314,7 @@ body {
   .presentation-name {
     margin: 0 0 0.1em 0;
     font-size: 3em;
+    font-weight: bold;
     color: $color-darker;
   }
 
@@ -405,7 +412,6 @@ body {
     -webkit-transition: color 0.5s, text-shadow 0.5s;
     -o-transition: all 0.5s text-shadow 0.5s;
     transition: all 0.5s text-shadow 0.5s;
-    font-weight: normal;
     line-height: 1.2em;
   }
 
