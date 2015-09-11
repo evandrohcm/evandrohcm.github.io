@@ -1,0 +1,15 @@
+---
+layout: post
+title: "First things first"
+published: true
+---
+
+<!-- Seriously? -->
+
+<!-- ![Este é pairar-texto (texto alternativo) para minha imagem](http://www.clickgratis.com.br/fotos-imagens/smile/aHR0cDovL21pY2hlbGxlc3JlYWQuY29tL2ZpbGVzLzIwMTMvMDQvc21pbGUuanBn.jpg "Um título opcional") -->
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptas, accusantium. Animi omnis, quaerat odio possimus dignissimos cum alias sed, perspiciatis quibusdam exercitationem voluptatibus laborum dolore dolorum modi soluta iusto!
+
+<!-- more -->
+
+Lorem <a href="/">ipsum</a> dolor sit amet, consectetur adipisicing elit. Placeat, veritatis nulla ducimus modi eius rerum at aspernatur. Maxime, quia neque quo, doloribus impedit doloremque quod assumenda harum ipsum repellendus tempore.
