@@ -471,6 +471,18 @@ p span.underline-hover {
   display: inline-block;
 }
 
+blockquote {
+  border-left: 5px solid lightgray;
+  padding-left: 1.5em;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+
+  cite {
+    font-style: normal;
+  }
+}
+
 
 /* --- Media queries for responsive layout --- */
 
