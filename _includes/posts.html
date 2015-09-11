@@ -1,0 +1,62 @@
+{% if paginator.page %}
+
+  {% assign offset      = paginator.page | minus:1 | times:paginator.per_page %}
+  {% assign currentPage = paginator.page %}
+
+{% else %}
+
+  {% assign offset      = 0 %}
+  {% assign currentPage = 1 %}
+
+{% endif %}
+
+<section class="post-list" data-page="{{ currentPage }}" data-totalPages="{{ paginator.total_pages }}">
+
+  {% for post in site.posts limit:site.paginate offset:offset %}
+
+    <article class="post-item">
+
+      {% if post.quote %}
+        <p class="post-header"><i class="fa fa-clock-o"></i> {{ post.date | date: "%b %-d, %Y" }}</p>
+
+        {{ post.content }}  
+      {% else %}
+
+        <header class="post-header">
+          <h1 class="post-title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h1>
+        </header> <!-- end .post-header -->
+
+        <section class="post-content">
+          {{ post.excerpt }}
+        </section> <!-- end .post-content -->
+
+        <footer class="post-footer">
+          <p class="post-date"><i class="fa fa-clock-o"></i> {{ post.date | date: "%b %-d, %Y" }}</p>
+
+          <p class="post-link clearfix underline-hover">
+            <a href="{{ post.url }}">Read more...</a>
+          </p>
+        </footer> <!-- end .post-footer -->
+
+      {% endif %}
+
+    </article> <!-- end .post-item -->
+
+  {% endfor %}
+
+</section> <!-- end .post-list -->
+
+{% assign postCount    = site.posts | size %}
+{% assign postsCovered = site.paginate | plus:offset %}
+
+{% if postsCovered < postCount %}
+
+  <p class="load-more">
+    <span class="underline-hover">
+      <a id="load-more-button" href="#" class="text-shadow">Load more posts</a>
+    </span>
+  </p>
+
+{% endif %}
