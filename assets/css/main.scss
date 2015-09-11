@@ -411,7 +411,7 @@ body {
 
 }
 
-.index .post-title:hover {
+.index .post-title:hover, .blog .post-title:hover {
   @extend .text-shadow;
   -webkit-transition: color 0.5s, text-shadow 0.5s;
   -o-transition: all 0.5s text-shadow 0.5s;
