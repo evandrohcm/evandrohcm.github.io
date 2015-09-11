@@ -232,6 +232,7 @@ h1, h2, h3, h4, h5, h6, p {
 .main-heading {
   margin-bottom: 0.75em;
   text-align: center;
+  line-height: 1.2em;
 }
 
 .text-shadow {
@@ -498,6 +499,29 @@ blockquote {
 }
 
 
+/* --- About --- */
+
+.about-image {
+  float: left;
+  margin: 0 2em 0 0;
+  width: 30%;
+
+  img {
+    border: 3px solid #D3D3D3;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+}
+
+.about-text {
+  p {
+    margin: 0 0 1em 0;
+  }
+}
+
+
 /* --- Media queries for responsive layout --- */
 
 /* --- Mobile --- */
@@ -655,6 +679,13 @@ blockquote {
     margin-bottom: 1em;
   }
 
+  .about-image {
+    width: 100%;
+    float: none;
+    margin: 0 0 1em 0;
+    text-align: center;
+  }
+
   // Makes the nav menu be able to override the Font Awesome
   .fa {
     transform: initial;
@@ -774,6 +805,10 @@ blockquote {
 
   .load-more {
     margin-bottom: -1.2em;
+  }
+
+  .about-image {
+    width: 40%;
   }
 
   .social-list {
