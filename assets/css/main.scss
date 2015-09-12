@@ -426,7 +426,7 @@ body {
 }
 
 .post-content {
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
   }
@@ -439,10 +439,19 @@ body {
 
   p {
     margin: 1.2em 0;
+  }
 
-    a {
-      @extend .text-shadow;
-      border-bottom: 1px solid #BFBFBF;
+}
+
+.post-content, .about-text {
+
+  a {
+    @extend .text-shadow;
+    border-bottom: 1px dashed #BFBFBF;
+
+    &:hover {
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
     }
   }
 
@@ -699,7 +708,7 @@ blockquote {
 @media only screen and (min-width:600px) and (max-width:899px) {
 
   .active {
-    
+
     a {
       color: $color-darker;
       -webkit-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
@@ -823,7 +832,7 @@ blockquote {
 @media only screen and (min-width:900px) {
 
   .active {
-    
+
     a {
       color: $color-darker;
       -webkit-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
