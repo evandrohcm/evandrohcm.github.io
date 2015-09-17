@@ -36,23 +36,25 @@ $(function(){
     var $loadMore      = $(this).parents(".load-more"),
         $blogContainer = $(".post-list"),
         nextPage       = parseInt($blogContainer.attr("data-page")) + 1,
-        totalPages     = parseInt($blogContainer.attr("data-totalPages"));
+        totalPages     = parseInt(localStorage.getItem("totalPages"));
 
     $loadMore.append('<i class="fa fa-refresh fa-spin loading-spinner"></i>');
 
-    $.get("/page" + nextPage, function (data) {
+    $.get("/page" + nextPage + "/", function (data) {
 
       var htmlData  = $.parseHTML(data),
           $articles = $(htmlData).find("article.post-item");
 
       $blogContainer.attr("data-page", nextPage).append($articles);
 
-      if ($blogContainer.attr("data-totalPages") == nextPage) {
+      if (totalPages == nextPage)
         $(".load-more").remove();
-      }
 
-      $loadMore.remove('.loading-spinner');
+      $loadMore.children('.loading-spinner').remove();
 
+    })
+    .error(function() {
+      $(".load-more").remove();
     });
 
   };
@@ -71,4 +73,4 @@ $(function(){
 
   });
 
-});
+}); // end $.ready()

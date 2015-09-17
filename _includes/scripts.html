@@ -1,3 +1,10 @@
+<!-- Set the total pages number in local storage -->
+{% if paginator.total_pages %}
+<script>
+  localStorage.setItem("totalPages", "{{ paginator.total_pages }}");
+</script>
+{% endif %}
+
 <!-- jQuery -->
 <script src="{{ site.baseurl }}assets/js/jquery-2.1.4.min.js"></script>
 
