@@ -7,8 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="keywords" content="evandro, macedo, evandro macedo, evandromacedo, web, development, web developer, programming, front-end, html5, css3, javascript, django, meditation">
+  <meta name="keywords" content="evandro, macedo, evandro macedo, evandromacedo, web, development, web developer, programming, front-end, html5, css3, javascript, python, django, meditation">
   <meta name="google-site-verification" content="wRJXqruBgzVu3H_PizgDWVJ0Vd9v0196RiGSg7X-MVU">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:url" content="http://evandromacedo.com">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:type" content="blog">
+  <meta property="og:image" content="http://evandromacedo.com/assets/img/me.jpeg">
+  <meta property="og:site_name" content="Evandro Macedo's personal website.">
 
   <!-- Favicon -->
   <!-- <link rel="shortcut icon" href="{{ site.baseurl }}assets/img/favicon.ico" type="image/x-icon"> -->
@@ -17,6 +25,7 @@
   <link rel="stylesheet" href="{{ site.baseurl }}assets/font/font-awesome-4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' type='text/css'>
   <link rel="stylesheet" href="{{ site.baseurl }}assets/css/main.css">
+  <link rel="canonical" href="http://evandromacedo.com/" />
   <link rel="author" href="https://plus.google.com/+EvandroMacedoMago?rel=author"/>
 
 </head>
