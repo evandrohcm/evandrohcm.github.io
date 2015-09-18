@@ -12,11 +12,12 @@ $color-darker  : #4D4D4D;
 $header-color  : #F5F5F5;
 
 // Social colors
-$facebook-color: #3B579D;
-$twitter-color : #00ACED;
-$linkedin-color: #007BB6;
-$github-color  : #333;
-$mail-color    : #E93E39;
+$facebook-color  : #3B579D;
+$twitter-color   : #00ACED;
+$linkedin-color  : #007BB6;
+$github-color    : #333333;
+$mail-color      : #E93E39;
+$pinterest-color : #CB2026;
 
 
 /* --- Font-faces --- */
@@ -984,6 +985,7 @@ blockquote {
     .social-github:hover { color: $github-color }
     .social-linkedin:hover { color: $linkedin-color }
     .social-mail:hover { color: $mail-color }
+    .social-pinterest:hover { color: $pinterest-color }
   }
 
   .underline-hover {
