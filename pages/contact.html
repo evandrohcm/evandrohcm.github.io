@@ -1,0 +1,22 @@
+---
+layout: default
+title: Contact Evandro Macedo
+active: contact
+permalink: /contact/
+---
+
+<h1 class="main-heading">Want to say something?</h1>
+
+<p class="text-center">You can send a mail to <strong>evandro.hcm@gmail.com</strong> or use the form below.</p>
+
+<form id="contact-form" action="http://formspree.io/evandro.hcm@gmail.com" method="POST">
+  <input type="hidden" name="_next" value="/thanks/">
+
+  <input type="text" name="name" class="contact-input" placeholder="Name" required>
+
+  <input type="email" name="email" class="contact-input" placeholder="E-mail" required>
+
+  <textarea name="message" class="contact-input contact-message" placeholder="Your message" required></textarea>
+
+  <input type="submit" value="Send">
+</form> <!-- end #contact-form -->

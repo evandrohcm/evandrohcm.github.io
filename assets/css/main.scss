@@ -245,6 +245,14 @@ h1, h2, h3, h4, h5, h6, p {
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
 }
 
+.text-center {
+  text-align: center;
+}
+
+.back-button {
+  margin: 1.5em 0;
+}
+
 .index .footer {
   -webkit-animation: fadeInFooter 2.1s ease-in-out;
   -moz-animation: fadeInFooter 2.1s ease-in-out;
@@ -531,6 +539,35 @@ blockquote {
   }
 }
 
+
+/* --- Contact form --- */
+
+#contact-form {
+  width: 100%;
+  margin: 1.5em auto 1em;
+
+  input[type="submit"] {
+    background-color: #FFF;
+    border: 1px solid #999999;
+    padding: 0.51em 0.7em;
+  }
+
+}
+
+.contact-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  height: 2.5em;
+  outline: 0;
+  padding-left: 1em;
+  border: 1px solid #999999;
+}
+
+.contact-message {
+  padding-top: 0.4em;
+  height: 8em;
+}
 
 /* --- Media queries for responsive layout --- */
 
@@ -852,6 +889,10 @@ blockquote {
       background-color: $color-darker;
     }
 
+  }
+
+  #contact-form {
+    width: 650px;
   }
 
   /* CSS Animations on index */
