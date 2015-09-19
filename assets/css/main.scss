@@ -546,7 +546,7 @@ blockquote {
   width: 100%;
   margin: 1.5em auto 1em;
 
-  input[type="submit"] {
+  button[type="submit"] {
     background-color: #FFF;
     border: 1px solid #999999;
     padding: 0.51em 0.7em;
@@ -1033,7 +1033,7 @@ blockquote {
   .underline-hover {
     position: relative;
 
-    a::before {
+    a::before, .underline-inner::before {
       content: " ";
       position: absolute;
       bottom: 0;
@@ -1045,7 +1045,7 @@ blockquote {
       transition: width 0.1s linear;
     }
 
-    a:hover::before {
+    a:hover::before, .underline-inner:hover::before {
       width: 100%;
     }
 
