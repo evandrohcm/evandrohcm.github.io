@@ -9,3 +9,8 @@ paginate: 5
 excerpt_separator: "<!-- more -->"
 sass:
   style: :compressed
+
+jekyll-press:
+  js_options: {}
+  css_options: {}
+  html_options: {}
